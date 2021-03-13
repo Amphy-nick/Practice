@@ -26,6 +26,7 @@
   --accent-text-color: #ff6c00;
   --title-color: #303030;
   --dark-bg-color: #191c26;
+  --second-bg-color: #f7f7f7;
 
   --title-font: "Raleway", sans-serif;
 }
@@ -33,6 +34,10 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--main-text-color);
+}
+
+address {
+  font-style: normal;
 }
 
 .link {
@@ -65,6 +70,20 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--title-color);
+  background-color: #ffffff;
+}
+
+.dark-bg .button {
+  --title-color: #ffffff;
+  background-color: var(--dark-bg-color);
+}
+
+.button:hover,
+.button:focus,
+.dark-bg .button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
 }
 
 .title {
@@ -102,4 +121,77 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--dark-bg-text-color);
+}
+
+/* Header */
+
+.header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+/* Benefits section */
+
+.benefits-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--title-color);
+  background-color: var(--second-bg-color);
+}
+
+.benefits-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+/* Teasm section */
+
+.team {
+  background-color: var(--second-bg-color);
+}
+
+.team-list-inem {
+  text-align: center;
+}
+
+.team-member {
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.team-member-position {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+}
+
+.dark-bg {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-bg-text-color);
+}
+
+.dark-bg .title {
+  --title-color: #ffffff;
+}
+
+.dark-bg .title-label {
+  --title-color: rgba(157, 164, 189, 0.6);
 }
